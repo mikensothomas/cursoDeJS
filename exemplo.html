@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primeiro Site</title>
+</head>
+<body>
+	<label>Digite seu nome</label>
+	<input id="textNome"></input>
+	<button id="btnEnviar">Submit</button>
+	<script type="text/javascript">
+		
+		let entrada = document.getElementById('textNome');
+		let button = document.getElementById('btnEnviar');
+		button.addEventListener('click', ()=>{
+			alert(entrada.value);
+		});
+
+	</script> 
+</body>
+</html>

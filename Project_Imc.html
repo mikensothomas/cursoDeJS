@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Primeiro Projeto em Js</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<label>Digite sua altura</label>
+	<input id="altura">
+	<label>Digite seu peso em massa</label>
+	<input id="peso">
+	<button id="txtEnviar">Enviar</button>
+
+</body>
+<script>
+
+     let altura = document.getElementById('altura');
+	 let peso = document.getElementById('peso');
+	 let button = document.getElementById('txtEnviar');
+	 button.addEventListener('Click',()=>{
+		
+		let alturaFloat = parseFloat(altura.value);
+		let pesoFloat = parseFloat(peso.value);
+		let resultado = pesoFloat/(alturaFloat * alturaFloat);
+		document.write("O seu imc é: " +resultado);
+	 
+	 })
+	 
+</script>
+</html>

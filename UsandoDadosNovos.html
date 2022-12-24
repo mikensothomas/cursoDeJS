@@ -1,0 +1,32 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+     <title>Manipulando Dados</title>
+	 <meta charset="UTF-8">
+  </head>
+  <body>
+	 <label>Digite seu nome </label>
+	 <input id="txtNome">
+	 <label>Digite seu sobrenome</label>
+	 <input id="txtSobrenome">
+	 <label>Digite sua idade</label>
+	 <input id="txtIdade">
+	 <button id="btnEnviar">Enviar</button>
+	 
+	 <script>
+	 
+		 let nome = document.getElementById('txtNome');
+		 let sobrenome = document.getElementById('txtSobrenome');
+		 let idade = document.getElementById('txtIdade');
+		 let button = document.getElementById('btnEnviar');
+		 button.addEventListener('click', ()=>{
+		     idade = parseInt(idade.value);
+			 let resultInt = idadeInt + idadeInt;
+			 let nomeCompleto = nome.value + sobrenome.value;
+			 document.write(nomeCompleto + resultInt);
+		    
+		 });
+		 
+	 </script>
+  </body>
+</html>

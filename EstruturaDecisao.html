@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Estruturas de Decisão</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+   <label>Digite sua idade</label>
+   <input id="txtIdade">
+   <button id="btnEnviar">submit</button>
+   
+</body>
+<script>
+	let input = document.getElementById('txtIdade');
+	let button = document.getElementById('btnEnviar');
+	button.addEventListener('click',()=>{
+		let idade = parseInt(input.value);
+		if (idade >= 18){
+			alert('Apto a tirar a carteira de motorista!');
+		}else{
+			alert('Espere, para ser maior de idade!');
+		}
+		
+	})
+</script>
+</html>
