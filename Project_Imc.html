@@ -9,21 +9,20 @@
 	<input id="altura">
 	<label>Digite seu peso em massa</label>
 	<input id="peso">
-	<button id="txtEnviar">Enviar</button>
+	<button id="txtEnviar" onclick="IMC()">Enviar</button>
 
 </body>
 <script>
-
+function IMC(){
      let altura = document.getElementById('altura');
 	 let peso = document.getElementById('peso');
 	 let button = document.getElementById('txtEnviar');
-	 button.addEventListener('Click',()=>{
-		let alturaFloat = parseFloat(altura.value);
-		let pesoFloat = parseFloat(peso.value);
-		let resultado = pesoFloat/(alturaFloat * alturaFloat);
-		document.write("O seu imc é: " +resultado);
-	 
-	 })
+
+	 let alturaFloat = parseFloat(altura.value);
+	 let pesoFloat = parseFloat(peso.value);
+	 let resultado = pesoFloat/(alturaFloat * alturaFloat);
+	 document.write("O seu imc é: " + resultado.toFixed(2));
+}
 	 
 </script>
 </html>
